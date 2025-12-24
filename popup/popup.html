@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Easy Download</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>GitHub Easy Download</h1>
+      <div class="version">v1.0.0</div>
+    </header>
+
+    <section class="status-section">
+      <h2>Current Page</h2>
+      <div id="current-repo" class="status-info">
+        <span class="label">Repository:</span>
+        <span id="repo-name" class="value">Not on a repository page</span>
+      </div>
+      <div id="release-info" class="status-info" style="display: none;">
+        <span class="label">Latest Release:</span>
+        <span id="release-version" class="value">-</span>
+      </div>
+    </section>
+
+    <section class="system-section">
+      <h2>Detected System</h2>
+      <div class="system-info">
+        <div class="system-row">
+          <span class="label">OS:</span>
+          <span id="system-os" class="value">Detecting...</span>
+        </div>
+        <div class="system-row">
+          <span class="label">Architecture:</span>
+          <span id="system-arch" class="value">Detecting...</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cache-section">
+      <h2>Cache Management</h2>
+      <div class="cache-info">
+        <p id="cache-status">Cache stores release data for faster loading</p>
+        <button id="clear-cache-btn" class="btn btn-secondary">
+          Clear Cache
+        </button>
+      </div>
+    </section>
+
+    <footer class="popup-footer">
+      <a href="#" id="options-link" class="footer-link">Settings</a>
+      <span class="separator">•</span>
+      <a href="https://github.com/yourusername/github-easy-download" target="_blank" class="footer-link">About</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

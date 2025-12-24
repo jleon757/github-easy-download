@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Easy Download - Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options-container">
+    <header class="options-header">
+      <h1>GitHub Easy Download Settings</h1>
+      <p class="subtitle">Configure how the extension behaves</p>
+    </header>
+
+    <main class="options-main">
+      <section class="option-group">
+        <h2>Release Settings</h2>
+
+        <div class="option-item">
+          <label class="option-label">
+            <input type="checkbox" id="includePrereleases" class="option-checkbox">
+            <div class="option-text">
+              <div class="option-title">Include Pre-releases</div>
+              <div class="option-description">
+                Show pre-release versions when looking for the latest release
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="option-item">
+          <label class="option-label">
+            <input type="checkbox" id="showOldReleaseWarning" class="option-checkbox">
+            <div class="option-text">
+              <div class="option-title">Show Old Release Warning</div>
+              <div class="option-description">
+                Display a warning icon when a release is older than the specified threshold
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="option-item">
+          <div class="option-input-group">
+            <label for="oldReleaseThresholdDays" class="input-label">
+              Old Release Threshold (days)
+            </label>
+            <input
+              type="number"
+              id="oldReleaseThresholdDays"
+              class="option-input"
+              min="30"
+              max="1095"
+              step="1"
+            >
+            <div class="option-description">
+              Number of days after which a release is considered old (30-1095 days)
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="option-group">
+        <h2>Cache Settings</h2>
+
+        <div class="option-item">
+          <div class="option-input-group">
+            <label for="cacheTTLMinutes" class="input-label">
+              Cache Duration (minutes)
+            </label>
+            <input
+              type="number"
+              id="cacheTTLMinutes"
+              class="option-input"
+              min="5"
+              max="60"
+              step="5"
+            >
+            <div class="option-description">
+              How long to cache API responses to reduce GitHub API calls (5-60 minutes)
+            </div>
+          </div>
+        </div>
+
+        <div class="option-item">
+          <button id="clearAllCache" class="btn btn-secondary">
+            Clear All Cache
+          </button>
+          <div class="option-description">
+            Remove all cached release data from the extension
+          </div>
+        </div>
+      </section>
+
+      <section class="option-group">
+        <h2>About</h2>
+
+        <div class="about-info">
+          <p>
+            GitHub Easy Download makes it simple to download the right release binary for your system
+            directly from GitHub repository pages.
+          </p>
+          <p class="version-info">
+            Version: 1.0.0
+          </p>
+          <p>
+            <a href="https://github.com/yourusername/github-easy-download" target="_blank" class="link">
+              View on GitHub
+            </a>
+            •
+            <a href="https://github.com/yourusername/github-easy-download/issues" target="_blank" class="link">
+              Report an Issue
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="options-footer">
+      <div id="save-status" class="save-status"></div>
+      <div class="button-group">
+        <button id="restoreDefaults" class="btn btn-secondary">
+          Restore Defaults
+        </button>
+        <button id="saveOptions" class="btn btn-primary">
+          Save Settings
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

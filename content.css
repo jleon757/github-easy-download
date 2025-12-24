@@ -1,0 +1,249 @@
+/* Styles for GitHub Easy Download extension buttons */
+
+/* Header button (next to Code button) */
+.gh-easy-download-btn-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+  text-decoration: none;
+  flex-shrink: 0;
+
+  /* GitHub blue theme */
+  color: #ffffff;
+  background-color: #0969da;
+  border-color: rgba(31, 35, 40, 0.15);
+  box-shadow: 0 1px 0 rgba(31, 35, 40, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.gh-easy-download-btn-header:hover:not(:disabled) {
+  background-color: #0860ca;
+  border-color: rgba(31, 35, 40, 0.15);
+}
+
+.gh-easy-download-btn-header:active:not(:disabled) {
+  background-color: #0757ba;
+}
+
+.gh-easy-download-btn-header:disabled,
+.gh-easy-download-btn-header.loading {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Sidebar button */
+.gh-easy-download-sidebar-container {
+  margin-top: 8px;
+}
+
+.gh-easy-download-btn-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+  text-decoration: none;
+
+  /* Subtle green theme for sidebar */
+  color: #ffffff;
+  background-color: #1a7f37;
+  border-color: rgba(31, 35, 40, 0.15);
+  box-shadow: 0 1px 0 rgba(31, 35, 40, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.gh-easy-download-btn-sidebar:hover:not(:disabled) {
+  background-color: #177530;
+  border-color: rgba(31, 35, 40, 0.15);
+}
+
+.gh-easy-download-btn-sidebar:active:not(:disabled) {
+  background-color: #146c2a;
+}
+
+.gh-easy-download-btn-sidebar:disabled,
+.gh-easy-download-btn-sidebar.loading {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Icon styles */
+.gh-easy-download-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Loading state */
+.gh-easy-download-btn.loading .gh-easy-download-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Old release warning */
+.gh-easy-download-btn.old-release {
+  position: relative;
+}
+
+.gh-easy-download-warning {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  cursor: help;
+}
+
+/* Fallback button style */
+.gh-easy-download-btn-header[data-fallback="true"],
+.gh-easy-download-btn-sidebar[data-fallback="true"] {
+  background-color: #57606a;
+  border-color: rgba(31, 35, 40, 0.15);
+}
+
+.gh-easy-download-btn-header[data-fallback="true"]:hover:not(:disabled),
+.gh-easy-download-btn-sidebar[data-fallback="true"]:hover:not(:disabled) {
+  background-color: #4d545c;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .gh-easy-download-btn-header {
+    color: #ffffff;
+    background-color: #0969da;
+    border-color: rgba(240, 246, 252, 0.1);
+    box-shadow: 0 0 transparent;
+  }
+
+  .gh-easy-download-btn-header:hover:not(:disabled) {
+    background-color: #0860ca;
+    border-color: rgba(240, 246, 252, 0.1);
+  }
+
+  .gh-easy-download-btn-sidebar {
+    color: #ffffff;
+    background-color: #1a7f37;
+    border-color: rgba(240, 246, 252, 0.1);
+    box-shadow: 0 0 transparent;
+  }
+
+  .gh-easy-download-btn-sidebar:hover:not(:disabled) {
+    background-color: #177530;
+    border-color: rgba(240, 246, 252, 0.1);
+  }
+
+  .gh-easy-download-btn-header[data-fallback="true"],
+  .gh-easy-download-btn-sidebar[data-fallback="true"] {
+    background-color: #57606a;
+    border-color: rgba(240, 246, 252, 0.1);
+  }
+}
+
+/* Button wrapper for better positioning */
+.gh-easy-download-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gh-easy-download-wrapper.new-row {
+  display: inline-block !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* Full width container for centered button */
+.gh-easy-download-full-width {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 12px 0 !important;
+}
+
+/* When button is on its own row, make it stand out and larger */
+.gh-easy-download-wrapper.new-row .gh-easy-download-btn-header {
+  box-shadow: 0 1px 3px rgba(27, 31, 36, 0.12), 0 8px 24px rgba(66, 74, 83, 0.12);
+  padding: 8px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.gh-easy-download-wrapper.new-row .gh-easy-download-btn-header:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(27, 31, 36, 0.15), 0 12px 28px rgba(66, 74, 83, 0.15);
+}
+
+.gh-easy-download-wrapper.new-row .gh-easy-download-btn-header .gh-easy-download-icon {
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+/* Show full text when centered */
+.gh-easy-download-wrapper.new-row .gh-easy-download-btn-header .gh-easy-download-text {
+  display: inline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .gh-easy-download-btn-header {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gh-easy-download-btn-header {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .gh-easy-download-btn-header .gh-easy-download-icon {
+    font-size: 14px;
+  }
+
+  .gh-easy-download-btn-header span:not(.gh-easy-download-icon):not(.gh-easy-download-warning) {
+    display: none; /* Hide text on mobile, show only icon */
+  }
+}
+
+/* Optional: Alternative compact mode - shows just icon with tooltip */
+.gh-easy-download-btn-header.compact {
+  padding: 5px 8px;
+}
+
+.gh-easy-download-btn-header.compact span:not(.gh-easy-download-icon):not(.gh-easy-download-warning) {
+  display: none;
+}

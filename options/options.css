@@ -1,0 +1,374 @@
+/* Styles for the options page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+
+.options-container {
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.options-header {
+  padding: 32px;
+  background: linear-gradient(135deg, #0969da 0%, #0860ca 100%);
+  color: #ffffff;
+}
+
+.options-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Main content */
+.options-main {
+  padding: 32px;
+}
+
+/* Option groups */
+.option-group {
+  margin-bottom: 48px;
+}
+
+.option-group:last-child {
+  margin-bottom: 0;
+}
+
+.option-group h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #d1d9e0;
+}
+
+/* Option items */
+.option-item {
+  margin-bottom: 24px;
+}
+
+.option-label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.option-label:hover {
+  background-color: #f6f8fa;
+}
+
+.option-checkbox {
+  margin-right: 12px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.option-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 4px;
+}
+
+.option-description {
+  font-size: 13px;
+  color: #57606a;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* Input groups */
+.option-input-group {
+  padding: 12px;
+}
+
+.option-input-group.disabled {
+  opacity: 0.5;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 8px;
+}
+
+.option-input {
+  width: 120px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #24292f;
+  background-color: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.option-input:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+}
+
+.option-input:disabled {
+  background-color: #f6f8fa;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #0969da;
+  border-color: rgba(31, 35, 40, 0.15);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0860ca;
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: #0757ba;
+}
+
+.btn-secondary {
+  color: #24292f;
+  background-color: #f6f8fa;
+  border-color: rgba(31, 35, 40, 0.15);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #f3f4f6;
+  border-color: rgba(31, 35, 40, 0.2);
+}
+
+.btn-secondary:active:not(:disabled) {
+  background-color: #ebecf0;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* About section */
+.about-info {
+  padding: 16px;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+}
+
+.about-info p {
+  margin-bottom: 12px;
+  color: #24292f;
+}
+
+.about-info p:last-child {
+  margin-bottom: 0;
+}
+
+.version-info {
+  font-weight: 600;
+}
+
+.link {
+  color: #0969da;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #0860ca;
+  text-decoration: underline;
+}
+
+/* Footer */
+.options-footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-top: 1px solid #d1d9e0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.save-status {
+  display: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.save-status.success {
+  background-color: #d1f5d3;
+  color: #1a7f37;
+}
+
+.save-status.error {
+  background-color: #ffebe9;
+  color: #cf222e;
+}
+
+.save-status.info {
+  background-color: #ddf4ff;
+  color: #0969da;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #c9d1d9;
+    background-color: #010409;
+  }
+
+  .options-container {
+    background-color: #0d1117;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .options-header {
+    background: linear-gradient(135deg, #0969da 0%, #0860ca 100%);
+  }
+
+  .option-group h2 {
+    color: #c9d1d9;
+    border-bottom-color: #30363d;
+  }
+
+  .option-label:hover {
+    background-color: #161b22;
+  }
+
+  .option-title {
+    color: #c9d1d9;
+  }
+
+  .option-description {
+    color: #8b949e;
+  }
+
+  .input-label {
+    color: #c9d1d9;
+  }
+
+  .option-input {
+    color: #c9d1d9;
+    background-color: #0d1117;
+    border-color: #30363d;
+  }
+
+  .option-input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+  }
+
+  .option-input:disabled {
+    background-color: #161b22;
+  }
+
+  .btn-secondary {
+    color: #c9d1d9;
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+
+  .btn-secondary:hover:not(:disabled) {
+    background-color: #30363d;
+    border-color: #8b949e;
+  }
+
+  .about-info {
+    background-color: #161b22;
+  }
+
+  .about-info p {
+    color: #c9d1d9;
+  }
+
+  .link {
+    color: #58a6ff;
+  }
+
+  .link:hover {
+    color: #79c0ff;
+  }
+
+  .options-footer {
+    background-color: #0d1117;
+    border-top-color: #30363d;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .save-status.success {
+    background-color: #1a4721;
+    color: #3fb950;
+  }
+
+  .save-status.error {
+    background-color: #5d1f1f;
+    color: #f85149;
+  }
+
+  .save-status.info {
+    background-color: #0c2d6b;
+    color: #58a6ff;
+  }
+}
