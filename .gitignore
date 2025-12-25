@@ -137,3 +137,170 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# ===========================
+# Operating System Files
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================
+# IDE and Editor Files
+# ===========================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+.*.swp
+.*.swo
+.*.swn
+Session.vim
+Sessionx.vim
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================
+# Chrome Extension Specific
+# ===========================
+
+# Private keys (NEVER commit these!)
+*.pem
+*.crx
+key.pem
+*.key
+*.cert
+
+# Build and distribution files
+dist/
+build/
+*.zip
+*.xpi
+
+# Chrome extension development
+.chrome/
+chrome-profile/
+
+# ===========================
+# Project Specific
+# ===========================
+
+# Claude AI configuration
+.claude/
+
+# Internal documentation and guides
+PROMOTIONAL_IMAGES_GUIDE.md
+CHROME_STORE_SUBMISSION.md
+STORE_LISTING.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Cache directories
+cache/
+.cache/
+
+# Screenshots and promotional images (if storing elsewhere)
+screenshots/
+promotional/
+store_assets/
+
+# Private or sensitive data
+credentials.json
+secrets.json
+private/
+.private/
+
+# Test files that shouldn't be committed
+test-*.js
+*.test.js
+test/
+
+# Documentation builds
+docs/_build/
+docs/generated/
+
+# ===========================
+# Debugging and Profiling
+# ===========================
+
+# Chrome DevTools
+*.cpuprofile
+*.heapsnapshot
+*.heapprofile
+
+# Debug logs
+debug.log
+error.log
+*.log
