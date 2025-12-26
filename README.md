@@ -9,11 +9,11 @@ A Chrome extension that adds a "Download" button to GitHub repository pages, aut
 - **Old Release Warning**: Shows a subtle warning for releases older than a year
 
 ## Screenshots
-<img width="1400" height="560" alt="Image" src="https://github.com/user-attachments/assets/6916dc53-52f6-4be6-b6ca-6075b3e8882d" />
-
-<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/aedb5016-fd5e-40ae-b81e-1d5ef943cae1" />
-
-<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/e6901d2a-8e51-47d9-8802-e17a5b61a4af" />
+<kbd><img width="1400" height="560" alt="Image" src="https://github.com/user-attachments/assets/6916dc53-52f6-4be6-b6ca-6075b3e8882d" /></kbd>
+<br><br>
+<kbd><img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/aedb5016-fd5e-40ae-b81e-1d5ef943cae1" /></kbd>
+<br><br>
+<kbd><img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/e6901d2a-8e51-47d9-8802-e17a5b61a4af" /></kbd>
 
 ## Installation
 
