@@ -5,12 +5,15 @@ A Chrome extension that adds a "Download" button to GitHub repository pages, aut
 ## Features
 
 - **Automatic OS Detection**: Detects Windows, macOS, or Linux automatically
-- **Architecture Matching**: Identifies x64, ARM64, or x86 architecture
-- **Smart Asset Matching**: Uses intelligent scoring to find the best binary for your system
 - **Dual Button Placement**: Adds download buttons both in the header and sidebar for maximum visibility
-- **Cache Management**: Reduces API calls with smart caching (configurable TTL)
 - **Old Release Warning**: Shows a subtle warning for releases older than a year
-- **SPA Navigation Support**: Works seamlessly with GitHub's single-page application navigation
+
+## Screenshots
+<img width="1400" height="560" alt="Image" src="https://github.com/user-attachments/assets/6916dc53-52f6-4be6-b6ca-6075b3e8882d" />
+
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/aedb5016-fd5e-40ae-b81e-1d5ef943cae1" />
+
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/e6901d2a-8e51-47d9-8802-e17a5b61a4af" />
 
 ## Installation
 
