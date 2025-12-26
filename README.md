@@ -22,18 +22,13 @@ A Chrome extension that adds a "Download" button to GitHub repository pages, aut
    cd github-easy-download
    ```
 
-2. Replace the placeholder icon files in the `icons/` directory with actual PNG images:
-   - `icon16.png` - 16x16 pixels
-   - `icon48.png` - 48x48 pixels
-   - `icon128.png` - 128x128 pixels
+2. Open Chrome and navigate to `chrome://extensions/`
 
-3. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
 
-4. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked" and select the extension directory
 
-5. Click "Load unpacked" and select the extension directory
-
-6. The extension is now installed and active!
+5. The extension is now installed and active!
 
 ## Usage
 
@@ -145,17 +140,8 @@ MIT License - see LICENSE file for details
 ## Support
 
 If you encounter any issues or have suggestions:
-- Open an issue on [GitHub](https://github.com/yourusername/github-easy-download/issues)
+- Open an issue on [GitHub](https://github.com/jleon757/github-easy-download/issues)
 - Check existing issues for solutions
-
-## Roadmap
-
-Future enhancements planned:
-- GitHub OAuth for higher rate limits
-- Download progress indicator
-- Support for GitLab and Bitbucket
-- Keyboard shortcuts
-- Auto-update checking
 
 ---
 
